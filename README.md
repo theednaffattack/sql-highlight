@@ -1,4 +1,4 @@
-# SQL syntax highlight
+# SQL syntax highlight (w/ Typescript)
 
 > A simple and lightweight syntax highlighting library for SQL
 
