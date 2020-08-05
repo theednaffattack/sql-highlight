@@ -8,7 +8,10 @@
     "url": "https://github.com/scriptcoded/sql-highlight.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist && tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "keywords": [
     "sql",
@@ -20,5 +23,9 @@
   "contributors": [
     "pomahtuk"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7"
+  }
 }
