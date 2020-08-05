@@ -61,7 +61,7 @@ const highlighters = [
   },
 ];
 
-export function highlight(sqlString: string, options: HighlighterOptions) {
+export function highlight(sqlString: string, options?: HighlighterOptions) {
   options = Object.assign({}, DEFAULT_OPTIONS, options);
 
   const matches = [];
